@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     min-height: 100vh;
     height: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     .label{
         text-align: center;
     }
@@ -42,8 +42,8 @@
 
     // start discography
 .discography{
-    margin-bottom: 150px;
-    padding-bottom: 455px;
+    margin-bottom: 120px;
+    padding: 30px 0 455px;
     position: relative;
     &__bottombg{
         position: absolute;
@@ -61,10 +61,10 @@
     color: #986b50;
 }
 .discography__text{
-    max-width: 698px;
+    max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    letter-spacing: 1.18px;
+    letter-spacing: 0.118em;
     margin-bottom: 155px;
 }
 .discography__item{
@@ -117,8 +117,8 @@
 
     // start concert
 .concert{
-    margin-bottom: 145px;
-    padding-bottom: 250px;
+    margin-bottom: 115px;
+    padding: 30px 0px 250px;
     position: relative;
     &__bottombg{
         position: absolute;
@@ -135,10 +135,10 @@
         color: #62a2ad;
     }
     &__text{
-        max-width: 842px;
+        max-width: 955px;
         margin: 0 auto;
         text-align: center;
-        letter-spacing: 1.18px;
+        letter-spacing: 0.118em;
         margin-bottom: 470px;
     }
 }
@@ -197,15 +197,19 @@
     // end concert
     // start compositions
 .compositions{
+    padding-top: 30px;
     &__title{
         margin-bottom: 45px;
         color: #000;
+        &::after{
+            width: 616px;
+        }
     }
     &__text{
         max-width: 695px;
         margin: 0 auto;
         text-align: center;
-        letter-spacing: 1.18px;
+        letter-spacing: 0.118em;
         margin-bottom: 160px;
     }
 }
@@ -347,7 +351,7 @@
     // start slider
 .slider{
     margin-top: 160px;
-    margin-bottom: 165px;
+    margin-bottom: 135px;
     width: 100%;
     min-height: 642px;
     background-repeat: no-repeat;
@@ -366,7 +370,7 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 26px;
-            letter-spacing: 1.18px;
+            letter-spacing: 0.118em;
             color: #fff;
             text-transform: uppercase;
             margin-bottom: 35px;
@@ -427,6 +431,7 @@
     // start newtracks
 .newtracks{
     margin-bottom: 140px;
+    padding-top: 30px;
 }
 .newtracks__items{
     display: flex;
@@ -474,11 +479,13 @@
     max-width: 100%;
     min-height: 1203px;
     height: 100%;
-    padding: 180px 0 160px;
+    padding: 150px 0 160px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 120px;
     &__inner{
+        padding-top: 30px;
         max-width: 600px;
         margin-left: auto;
         margin-right: 10px;
@@ -525,6 +532,7 @@
         padding: 15px 0 10px;
         margin-bottom: 12px;
         position: relative;
+        letter-spacing: 0.018em;
         &::before{
             content: '';
             position: absolute;
@@ -556,10 +564,101 @@
     }
 }
     // end events
+    // start history
+.history{
+    padding-top: 30px;
+    margin-bottom: 230px;
+    max-width: 100%;
+    min-height: 1105px;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__title{
+        margin-bottom: 40px;
+        &::after{
+            width: 273px;
+        }
+    }
+    &__text{
+       max-width: 818px;
+       margin: 0 auto; 
+       text-align: center;
+       margin-bottom: 160px;
+       letter-spacing: 0.118em;
+    }
+}
+
+.history__item{
+    margin: 0 75px 0;
+    max-width: 190px;
+    &-title{
+        text-transform: uppercase;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        font-size: 35px;
+        line-height: 59px;
+        letter-spacing: 0.118em;
+        color: #c8cac9;
+        margin-bottom: 15px;
+        position: relative;
+        &::before{
+            content:'';
+            position: absolute;
+            width: 75px;
+            height: 1px;
+            background-color: #c8cac9;
+            top: 50%;
+            right: 100%;
+        }
+        &::after{
+            content:'';
+            position: absolute;
+            width: 75px;
+            height: 1px;
+            background-color: #c8cac9;
+            top: 50%;
+            left: 100%;
+        }
+    }
+    &-text{
+        // display: none;
+        text-align: center;
+        font-size: 14px;
+        line-height: 19px;
+        color: transparent;
+    }
+}
+.slick-slide .slick-current{
+    width: 340px;
+
+}
+.slick-active.slick-center{
+    .history__item-title{
+        color: #5a5a58;
+        &::before{
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #5a5a58; 
+        }
+        &::after{
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #5a5a58; 
+        }
+    }
+    .history__item-text{
+        color: #5a5a58;
+    }
+}
+
+    // end history
     // start footer
 .footer{
-    margin-top: 260px;
-    padding-bottom: 285px;
+    padding: 30px 0 285px;
     position: relative;
     &__bottombg{
         position: absolute;
@@ -652,5 +751,23 @@
 }
     // end footer
 
+.scrollup{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 0.3;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 15px;
+    color: #000;
+    display:none;
+    text-indent: -9999px;
+    background-color: #798285;
+    background-image: url(../images/icons/arrow.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+}
 
 

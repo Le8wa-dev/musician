@@ -13,19 +13,19 @@
 </head>
 
 <body>
-    <div class="header__wrapper" style="background-image: url(images/topbg.jpg);">
+    <div class="header__wrapper" id="top" style="background-image: url(images/topbg.jpg);">
         <header class="header">
             <div class="container">
                 <nav class="header__inner">
                     <ul>
                         <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">DISCOGRAPHY</a></li>
-                        <li><a href="#">Concert tours</a></li>
-                        <li><a href="#">latter compositions</a></li>
-                        <li><a href="#">new tracks</a></li>
-                        <li><a href="#">Upcoming Events</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="#discography">DISCOGRAPHY</a></li>
+                        <li><a href="#concert">Concert tours</a></li>
+                        <li><a href="#compositions">latter compositions</a></li>
+                        <li><a href="#newtracks">new tracks</a></li>
+                        <li><a href="#events">Upcoming Events</a></li>
+                        <li><a href="#history">History</a></li>
+                        <li><a href="#contact">contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -34,7 +34,7 @@
             <a href="#"><img src="images/label.png"></a>
         </div>
     </div>
-    <section class="discography">
+    <section class="discography" id="discography">
         <div class="discography__bottombg" style="background-image: url(images/woodbg.jpg);"></div>
         <div class="container">
             <div class="discography__title title">
@@ -110,7 +110,7 @@
             </div>
         </div>
     </section>
-    <section class="concert">
+    <section class="concert" id="concert">
         <div class="concert__bottombg" style="background-image: url(images/concertbg.jpg);"></div>
         <div class="container">
             <div class="concert__title title">
@@ -145,7 +145,7 @@
             </div>
         </div>
     </section>
-    <section class="compositions">
+    <section class="compositions" id="compositions">
         <div class="container">
             <div class="compositions__title title">
                 latter compositions
@@ -285,7 +285,7 @@
             </div>
         </div>
     </section>
-    <section class="newtracks">
+    <section class="newtracks" id="newtracks">
         <div class="container">
             <div class="newtracks__items">
                 <div class="newtracks__item" style="background-image: url(images/trackitem1.png);">
@@ -399,7 +399,7 @@
     </section>
     <section class="events" style="background-image: url(images/eventsbg.jpg);">
         <div class="container">
-            <div class="events__inner">
+            <div class="events__inner" id="events">
                 <div class="events__inner-title title">
                     Upcoming Events
                 </div>
@@ -436,7 +436,62 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <section class="history" id="history" style="background-image: url(images/historybg.jpg)">
+        <div class="container">
+            <div class="history__title title">
+                History
+            </div>
+            <div class="history__text">
+                In 2008, lead singer Dan Reynolds met drummer Andrew Tolman at Brigham Young University where they were
+                both students.Tolman recruited longtime high school friend Daniel Wayne "Wing" Sermon, who had graduated
+                from Berklee College of Music
+            </div>
+        </div>
+        <div class="history__inner">
+            <div class="history__item">
+                <div class="history__item-title">
+                    Mar 16
+                </div>
+                <div class="history__item-text">
+                    The performance was the live debut for "Summer" and "I'm So Sorry"
+                </div>
+            </div>
+            <div class="history__item">
+                <div class="history__item-title">
+                    Apr 11
+                </div>
+                <div class="history__item-text">
+                    The half-hour set included the breakthrough songs "It's Time" and "Radioactive" from Night Visions
+                </div>
+            </div>
+            <div class="history__item">
+                <div class="history__item-title">
+                    May 09
+                </div>
+                <div class="history__item-text">
+                    During the band's tour, Imagine Dragons released two non-album singles
+                </div>
+            </div>
+            <div class="history__item">
+                <div class="history__item-title">
+                    June 06
+                </div>
+                <div class="history__item-text">
+                    The band released a one night only concert film, Imagine Dragons In Concert
+                </div>
+            </div>
+            <div class="history__item">
+                <div class="history__item-title">
+                    Jul 25
+                </div>
+                <div class="history__item-text">
+                    Since the beginning of the Night Visions Tour, the band had been writing new material for an
+                    upcoming album
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="contact">
         <div class="concert__bottombg" style="background-image: url(images/footerbg.jpg);"></div>
         <div class="container">
             <div class="footer__inner">
@@ -491,6 +546,8 @@
             </div>
         </div>
     </footer>
+
+    <a href="#top" class="scrollup"></a>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
