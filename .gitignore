@@ -3,5 +3,5 @@
 .LSOverride
 .vs
 
-app/css/
+app/scss/
 node_modules/

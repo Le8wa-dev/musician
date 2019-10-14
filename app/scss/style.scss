@@ -39,6 +39,7 @@
     background-color: #000;
     height: 4px;
     margin-bottom: 4px;
+    border-radius: 4px;
 }
 .header__inner ul a{
         text-transform: uppercase;
@@ -258,6 +259,7 @@
             background-image: url(../images/icons/arrow.png);
             bottom: 50%;
             right: -13px;
+            z-index: 1;
         }
     }
     &-image{
