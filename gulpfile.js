@@ -8,7 +8,7 @@ let gulp = require('gulp'),
     // cssmin = require('gulp-cssmin');
 
 gulp.task('sass', function(){
-    return gulp.src('app/scss/style.scss')
+    return gulp.src('app/scss/**/*.scss')
             .pipe(sass({outputStyle: 'compressed'}))
             .pipe(rename({suffix: '.min'}))
             .pipe(autoprefixer({
@@ -22,7 +22,8 @@ gulp.task('style', function(){
     return gulp.src([
         'node_modules/normalize.css/normalize.css',
         'node_modules/slick-carousel/slick/slick.css',
-        'node_modules/magnific-popup/dist/jquery.magnific-popup.css'
+        'node_modules/slick-carousel/slick/slick-theme.css',
+        'node_modules/magnific-popup/dist/magnific-popup.css',
     ])
         .pipe(concat('libs.css'))
         .pipe(gulp.dest('app/css'))
@@ -31,7 +32,7 @@ gulp.task('style', function(){
 gulp.task('script', function(){
     return gulp.src([
         'node_modules/slick-carousel/slick/slick.js',
-        'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
+        'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
