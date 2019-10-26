@@ -43,7 +43,7 @@ $(function(){
         $('.header__inner > ul').slideToggle();
     });
 
-    // Плавный скролл к якорю
+    // Кнопка возврата вверх страницы
     $(window).scroll(function(){
         if ($(this).scrollTop() > 500) {
         $('.scrollup').fadeIn();
@@ -52,7 +52,7 @@ $(function(){
         }
     }); 
     
-    // Кнопка возврата к хедеру
+    // Плавный скролл к элементам меню
     $("a[href^='#']").click(function(){
         var _href = $(this).attr("href");
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
